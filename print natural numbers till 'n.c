@@ -1,0 +1,40 @@
+/*
+ ============================================================================
+ Name        : print.c
+ Author      : Rajkumar
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+
+int main() {
+
+	// WAP to print natural numbers till 'n'. 		[1, 2, 3,....n]
+	// Exploring while loop.
+
+	int counter = 1;
+
+	while (counter <= 10) {
+		printf("%d\n", counter);
+		counter++;
+	}
+
+	// WAP to find the factorial of a number.
+	// Example: Factorial of 5 = 5 * 4 * 3 * 2 * 1 = 120.
+
+	int num = 5;
+	long factorial = 1;
+
+	while (num > 0) {
+		factorial = factorial * num;
+		num--;
+	}
+
+	printf("Factorial is: %ld", factorial);
+
+	return 0;
+}
